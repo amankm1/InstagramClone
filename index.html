@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone - Friend Version</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Instagram Logo">
+                    </a>
+                </div>
+                <div class="searchbar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="nav-links">
+                    <ul class="nav-group">
+                        <li class="nav-item">
+                            <a href="#"><i class="fas fa-home"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href=""><i class="fas fa-paper-plane"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href=""><i class="far fa-compass"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href=""><i class="far fa-heart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="profile">
+                                <img src="images/anonymous.png" alt="Profile">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="col-9">
+                <div class="statuses">
+                    <!-- Status 1 -->
+                    <div class="status">
+                        <div class="image">
+                            <img src="images/anonymous.png" alt="Your Story">
+                        </div>
+                        <p class="status-name">Your Story</p>
+                    </div>
+                    <!-- Status 2 -->
+                    <div class="status">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Friend 1">
+                        </div>
+                        <p class="status-name">Friend 1</p>
+                    </div>
+                    <!-- Status 3 -->
+                    <div class="status">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Friend 2">
+                        </div>
+                        <p class="status-name">Friend 2</p>
+                    </div>
+                    <!-- Status 4 -->
+                    <div class="status">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Friend 3">
+                        </div>
+                        <p class="status-name">Friend 3</p>
+                    </div>
+                </div>
+                
+                <!-- POST TEMPLATE - Your Friend Can Copy This Section -->
+                <!-- =============================================== -->
+                <div class="card post-template">
+                    <div class="top">
+                        <div class="userDetails">
+                            <div class="profilepic">
+                                <div class="image">
+                                    <!-- CHANGE PROFILE PICTURE HERE -->
+                                    <img src="images/anonymous.png" alt="Profile Picture">
+                                </div>
+                            </div>
+                            <!-- CHANGE USERNAME AND LOCATION HERE -->
+                            <h3>Your Name<br><span>Your Location</span></h3>
+                        </div>
+                        <div>
+                            <span class="dot"><i class="fas fa-ellipsis-h"></i></span>
+                        </div>
+                    </div>
+                    <div class="imgBx">
+                        <!-- CHANGE POST IMAGE HERE -->
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Post Image" class="cover">
+                    </div>
+                    <div class="bottom">
+                        <div class="actionBtns">
+                            <div class="left">
+                                <span class="icon"><i class="far fa-heart"></i></span>
+                                <span class="icon"><i class="far fa-comment"></i></span>
+                                <span class="icon"><i class="far fa-paper-plane"></i></span>
+                            </div>
+                            <div class="right">
+                                <span class="icon"><i class="far fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <!-- CHANGE LIKE COUNT HERE -->
+                        <p class="likes">0 likes</p>
+                        <!-- CHANGE CAPTION HERE -->
+                        <p class="message"><b>Your Name</b> Your caption goes here! #hashtag</p>
+                        <!-- CHANGE COMMENT COUNT HERE -->
+                        <h4 class="comments">View all 0 comments</h4>
+                        <!-- CHANGE TIME HERE -->
+                        <h5 class="postTime">Just now</h5>
+                        <div class="addComments">
+                            <div class="reaction"><i class="far fa-smile"></i></div>
+                            <input type="text" class="text" placeholder="Add a comment...">
+                            <a href="#">Post</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF POST TEMPLATE -->
+                <!-- ===================== -->
+                
+                <!-- Sample Post 1 -->
+                <div class="card">
+                    <div class="top">
+                        <div class="userDetails">
+                            <div class="profilepic">
+                                <div class="image">
+                                    <img src="images/anonymous.png" alt="Profile">
+                                </div>
+                            </div>
+                            <h3>Aman Kumar Maurya<br><span>Varanasi, India</span></h3>
+                        </div>
+                        <div>
+                            <span class="dot"><i class="fas fa-ellipsis-h"></i></span>
+                        </div>
+                    </div>
+                    <div class="imgBx">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Post" class="cover">
+                    </div>
+                    <div class="bottom">
+                        <div class="actionBtns">
+                            <div class="left">
+                                <span class="icon"><i class="far fa-heart"></i></span>
+                                <span class="icon"><i class="far fa-comment"></i></span>
+                                <span class="icon"><i class="far fa-paper-plane"></i></span>
+                            </div>
+                            <div class="right">
+                                <span class="icon"><i class="far fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <p class="likes">203 likes</p>
+                        <p class="message"><b>Aman Kumar Maurya</b> Beautiful sunset today! #nature</p>
+                        <h4 class="comments">View all 32 comments</h4>
+                        <h5 class="postTime">2 hours ago</h5>
+                        <div class="addComments">
+                            <div class="reaction"><i class="far fa-smile"></i></div>
+                            <input type="text" class="text" placeholder="Add a comment...">
+                            <a href="#">Post</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sample Post 2 -->
+                <div class="card">
+                    <div class="top">
+                        <div class="userDetails">
+                            <div class="profilepic">
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Profile">
+                                </div>
+                            </div>
+                            <h3>Amitabh Bachchan<br><span>Mumbai, India</span></h3>
+                        </div>
+                        <div>
+                            <span class="dot"><i class="fas fa-ellipsis-h"></i></span>
+                        </div>
+                    </div>
+                    <div class="imgBx">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Post" class="cover">
+                    </div>
+                    <div class="bottom">
+                        <div class="actionBtns">
+                            <div class="left">
+                                <span class="icon"><i class="far fa-heart"></i></span>
+                                <span class="icon"><i class="far fa-comment"></i></span>
+                                <span class="icon"><i class="far fa-paper-plane"></i></span>
+                            </div>
+                            <div class="right">
+                                <span class="icon"><i class="far fa-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <p class="likes">119 likes</p>
+                        <p class="message"><b>Amitabh Bachchan</b> Working on a new project! #coding</p>
+                        <h4 class="comments">View all 20 comments</h4>
+                        <h5 class="postTime">4 hours ago</h5>
+                        <div class="addComments">
+                            <div class="reaction"><i class="far fa-smile"></i></div>
+                            <input type="text" class="text" placeholder="Add a comment...">
+                            <a href="#">Post</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+   
+    
+    <script>
+        // Improved like functionality
+        document.addEventListener('click', function(e) {
+            // Check if the clicked element is a heart icon or its parent
+            const heartIcon = e.target.closest('.fa-heart, .icon');
+            
+            if (heartIcon) {
+                const icon = heartIcon.classList.contains('fa-heart') 
+                    ? heartIcon 
+                    : heartIcon.querySelector('.fa-heart');
+                
+                if (icon && icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = '#ed4956';
+                    
+                    // Update like count
+                    const card = icon.closest('.card');
+                    const likesElement = card.querySelector('.likes');
+                    const currentLikes = parseInt(likesElement.textContent) || 0;
+                    likesElement.textContent = (currentLikes + 1) + ' likes';
+                    
+                    // Add animation
+                    icon.style.transform = 'scale(1.2)';
+                    setTimeout(() => {
+                        icon.style.transform = 'scale(1)';
+                    }, 300);
+                } else if (icon && icon.classList.contains('fas')) {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '#262626';
+                    
+                    // Update like count
+                    const card = icon.closest('.card');
+                    const likesElement = card.querySelector('.likes');
+                    const currentLikes = parseInt(likesElement.textContent) || 1;
+                    likesElement.textContent = (currentLikes - 1) + ' likes';
+                }
+            }
+        });
+
+        // Add comment functionality
+        document.addEventListener('keypress', function(e) {
+            if (e.target.classList.contains('text') && e.key === 'Enter') {
+                const input = e.target;
+                const commentText = input.value.trim();
+                
+                if (commentText) {
+                    const card = input.closest('.card');
+                    const commentsElement = card.querySelector('.comments');
+                    
+                    // Update comment count
+                    const currentComments = parseInt(commentsElement.textContent.match(/\d+/)) || 0;
+                    commentsElement.textContent = `View all ${currentComments + 1} comments`;
+                    
+                    // Clear input
+                    input.value = '';
+                    
+                    // Show success message
+                    input.placeholder = 'Comment posted!';
+                    setTimeout(() => {
+                        input.placeholder = 'Add a comment...';
+                    }, 2000);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

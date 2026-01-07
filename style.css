@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #262626;
+}
+
+.container {
+    max-width: 975px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 1px solid #dbdbdb;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+}
+
+.logo img {
+    margin-top: 7px;
+    width: 120px;
+    height: auto;
+}
+
+.searchbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar input {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 7px 15px 7px 30px;
+    font-size: 14px;
+    width: 215px;
+    outline: none;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 22px;
+}
+
+.nav-item a {
+    color: #262626;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.profile img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #dbdbdb;
+}
+
+/* Main content */
+main {
+    padding: 30px 0;
+}
+
+.col-9 {
+    max-width: 614px;
+    margin: 0 auto;
+}
+
+/* Status section */
+.statuses {
+    display: flex;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 16px 0;
+    margin-bottom: 24px;
+    overflow-x: auto;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.status .image {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.status img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 60px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.userDetails {
+    display: flex;
+    align-items: center;
+}
+
+.profilepic {
+    margin-right: 12px;
+}
+
+.profilepic .image {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #dbdbdb;
+}
+
+.profilepic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.userDetails h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.userDetails span {
+    font-size: 12px;
+    color: #8e8e8e;
+    font-weight: 400;
+}
+
+.dot {
+    font-size: 20px;
+    color: #262626;
+    cursor: pointer;
+}
+
+.imgBx {
+    width: 100%;
+    height: auto;
+}
+
+.cover {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bottom {
+    padding: 0 16px 16px;
+}
+
+.actionBtns {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 12px;
+}
+
+.left .icon, .right .icon {
+    margin-right: 16px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #262626;
+}
+
+.right .icon {
+    margin-right: 0;
+}
+
+.likes {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.message {
+    font-size: 14px;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.comments, .postTime {
+    font-size: 14px;
+    color: #8e8e8e;
+    margin-bottom: 4px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.postTime {
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.addComments {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #efefef;
+    padding-top: 16px;
+}
+
+.reaction {
+    margin-right: 12px;
+    color: #8e8e8e;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.addComments .text {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.addComments a {
+    color: #0095f6;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .searchbar {
+        display: none;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .navbar .container {
+        justify-content: space-around;
+    }
+    
+    .nav-item {
+        margin-left: 15px;
+    }
+}
+
+/* Animation for like */
+@keyframes likeAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+.fas.fa-heart {
+    color: #ed4956;
+    animation: likeAnimation 0.3s ease-in-out;
+}
