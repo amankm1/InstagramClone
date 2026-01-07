@@ -1,4 +1,4 @@
-
+https://amankm1.github.io/InstagramClone/
 
 📸 Instagram Clone (Frontend)
 A clean and responsive Instagram Clone built using HTML, CSS, and JavaScript.
